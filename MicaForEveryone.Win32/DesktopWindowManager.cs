@@ -185,8 +185,7 @@ namespace MicaForEveryone.Win32
 
             var accentPolicy = new AccentPolicy
             {
-                AccentState = AccentState.ACCENT_ENABLE_BLURBEHIND | AccentState.ACCENT_ENABLE_GRADIENT,
-                GradientColor = (152 << 24) | (0x2B2B2B & 0xFFFFFF),
+                AccentState = AccentState.ACCENT_ENABLE_BLURBEHIND 
             };
             var accentSize = Marshal.SizeOf(accentPolicy);
             var accentPolicyPtr = Marshal.AllocHGlobal(accentSize);
